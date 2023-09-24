@@ -24,8 +24,3 @@ Esta función realiza un análisis léxico y sintáctico del contenido en el ár
 
 La función `Errores()` crea un archivo JSON con los errores encontrados durante el análisis y muestra un mensaje informando que el archivo ha sido generado con éxito.
 
-## `info()`
-
-Esta función muestra una ventana de mensaje con información sobre el nombre del curso, el nombre del estudiante y el carné del estudiante.
-
-El código completo se basa en la biblioteca Tkinter para crear una interfaz gráfica de usuario (GUI) que permite abrir, editar y analizar archivos de texto, así como generar informes y gráficos a partir de los datos analizados. Las funciones y menús proporcionan funcionalidad y opciones para interactuar con el programa de manera efectiva.

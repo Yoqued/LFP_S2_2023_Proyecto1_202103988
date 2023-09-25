@@ -56,9 +56,9 @@ La función `Error()` se encarga de registrar los errores léxicos encontrados d
 
 El código completo se utiliza para analizar texto, crear gráficos, y generar informes de errores. Está diseñado para funcionar en conjunto con otras partes del programa para realizar un análisis completo de un archivo de entrada.
 
-# Funciones y Código para el Análisis de Expresiones Aritméticas y Generación de Árboles de Expresiones
+# Funciones y Código para el Análisis de Expresiones Aritméticas y Generación de Árboles de Expresiones del archivo 'aritmeticas.py'
 
-En el siguiente código, se implementa una serie de funciones y clases para realizar análisis de expresiones aritméticas y generar árboles de expresiones. El código está diseñado para ser parte de un analizador léxico y sintáctico más grande. archivo aritmeticas.py
+En el siguiente código, se implementa una serie de funciones y clases para realizar análisis de expresiones aritméticas y generar árboles de expresiones. El código está diseñado para ser parte de un analizador léxico y sintáctico más grande.
 
 ## Clase `Aritmetica`
 
@@ -97,4 +97,52 @@ El código utiliza una lista global `lista_nodos` para asignar nombres de nodos 
 ## Ejemplo de Uso
 
 El código se puede utilizar para analizar y evaluar expresiones aritméticas, generando un árbol de expresiones y una representación gráfica de dicho árbol. Esto es útil en aplicaciones de análisis y procesamiento de lenguaje natural que involucran expresiones matemáticas.
+
+# Funciones y Código para el Análisis de Expresiones Trigonometricas y Generación de Árboles de Expresiones del archivo 'trigonometrica.py'
+
+## Clase `Trigonometrica`
+
+La clase `Trigonometrica` es una subclase de la clase `Expression`. Esta clase se utiliza para representar expresiones trigonométricas como el seno, el coseno, la tangente y el inverso trigonométrico.
+
+### Constructor `__init__(self, left, tipo, fila, columna)`
+
+Este método constructor inicializa una instancia de la clase `Trigonometrica`. Toma los siguientes parámetros:
+
+- `left`: Representa la expresión que se evaluará dentro de la función trigonométrica.
+- `tipo`: Indica el tipo de función trigonométrica que se va a aplicar (seno, coseno, tangente, inverso).
+- `fila`: La fila en la que se encuentra esta expresión en el código fuente.
+- `columna`: La columna en la que se encuentra esta expresión en el código fuente.
+
+### Método `operar(self, arbol)`
+
+El método `operar` se encarga de evaluar la expresión trigonométrica y devuelve el resultado de la evaluación. Realiza las siguientes operaciones:
+
+- Evalúa la expresión `left` y almacena su valor en `leftValue`.
+- Comprueba el tipo de función trigonométrica (`tipo`) que se debe aplicar y realiza la operación correspondiente (seno, coseno, tangente, inverso).
+- Construye una cadena `resultado` que describe la operación realizada.
+- Establece `leftState` en `True` si la evaluación de `left` produjo un resultado diferente de `None`, lo que significa que la expresión es válida.
+- Crea representaciones en formato DOT para los nodos del árbol de sintaxis abstracta (`data_left`).
+- Devuelve el resultado de la operación trigonométrica, la cadena `resultado`, un indicador de estado `True`, la representación DOT actualizada y el nodo final del árbol de sintaxis abstracta.
+
+### Métodos `getFila(self)` y `getColumna(self)`
+
+Estos métodos heredados de la clase base `Expression` se utilizan para obtener la fila y la columna en las que se encuentra esta expresión en el código fuente.
+
+## Uso de la Clase `Trigonometrica`
+
+La clase `Trigonometrica` se utiliza para representar y evaluar expresiones trigonométricas como el seno, el coseno, la tangente y el inverso trigonométrico. Toma una expresión como argumento y devuelve el resultado de la operación trigonométrica aplicada a esa expresión.
+
+Ejemplo de uso:
+
+```python
+expresion_trigonometrica = Trigonometrica(ExpresionNumerica(45), TipoTrigonometrica('seno'), 1, 1)
+resultado, descripcion, estado, representacion_dot, nodo_final = expresion_trigonometrica.operar(arbol_sintactico)
+
+Este código define la clase `Expression` como una **clase abstracta** utilizando el módulo `ABC`. Una clase abstracta es una clase que no puede ser instanciada directamente y se utiliza como una plantilla para definir otras clases. En este caso, `Expression` sirve como una base para definir clases concretas relacionadas con expresiones en algún tipo de árbol sintáctico.
+
+El **constructor** `__init__` recibe dos parámetros, `fila` y `columna`, que representan la posición de la expresión en algún contexto (por ejemplo, en un archivo de código fuente).
+
+Los métodos `operar`, `getFila`, y `getColumna` están marcados como abstractos con el decorador `@abstractmethod`. Esto significa que las clases que hereden de `Expression` deben proporcionar implementaciones concretas para estos métodos en sus definiciones. Estos métodos abstractos definen el comportamiento que se espera de las clases derivadas, pero no proporcionan una implementación real en la clase base `Expression`.
+
+En resumen, este código establece una estructura base para representar expresiones en un contexto más amplio y exige que las clases derivadas implementen ciertos métodos cruciales para manipular estas expresiones. Es una técnica común en la programación orientada a objetos para garantizar una jerarquía de clases coherente y cohesiva.
 

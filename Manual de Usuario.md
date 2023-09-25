@@ -16,4 +16,4 @@ Lo que genera en esta opción es el analisis del archivo que se abrio; es necesa
 Al generarse el reporte aparecera una gráfica donde se estara viendo de manera mas legible y conmprensible de todas las operaciones que se analizaron anteriormente. 
 
 ## Errores
-Los erroes es una opción que genera un archivo de tipo '.json' que en el cual en el analisis previo se agregaron ya que encontraron sintaxis o errores lexicos que no concuerdan con el funcionamiento del Analizador
+Los erroes es una opción que genera un archivo de tipo '.json' que en el cual en el analisis previo se agregaron ya que encontraron sintaxis o errores lexicos que no concuerdan con el funcionamiento del Analizador.

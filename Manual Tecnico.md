@@ -1,4 +1,4 @@
-# Funciones y Código en Tkinter para una Aplicación de Edición y Análisis de Texto del archivo 'Principal.py'
+# Funciones y Código en Tkinter para una Aplicación de Edición y Análisis de Texto del archivo `Principal.py`
 
 ## `Abrir_Archivo()`
 
@@ -56,7 +56,7 @@ La función `Error()` se encarga de registrar los errores léxicos encontrados d
 
 El código completo se utiliza para analizar texto, crear gráficos, y generar informes de errores. Está diseñado para funcionar en conjunto con otras partes del programa para realizar un análisis completo de un archivo de entrada.
 
-# Funciones y Código para el Análisis de Expresiones Aritméticas y Generación de Árboles de Expresiones del archivo 'aritmeticas.py'
+# Funciones y Código para el Análisis de Expresiones Aritméticas y Generación de Árboles de Expresiones del archivo `aritmeticas.py`
 
 En el siguiente código, se implementa una serie de funciones y clases para realizar análisis de expresiones aritméticas y generar árboles de expresiones. El código está diseñado para ser parte de un analizador léxico y sintáctico más grande.
 
@@ -98,7 +98,8 @@ El código utiliza una lista global `lista_nodos` para asignar nombres de nodos 
 
 El código se puede utilizar para analizar y evaluar expresiones aritméticas, generando un árbol de expresiones y una representación gráfica de dicho árbol. Esto es útil en aplicaciones de análisis y procesamiento de lenguaje natural que involucran expresiones matemáticas.
 
-# Funciones y Código para el Análisis de Expresiones Trigonometricas y Generación de Árboles de Expresiones del archivo 'trigonometrica.py'
+# Funciones y Código para el Análisis de Expresiones Trigonometricas y Generación de Árboles de Expresiones del archivo 
+`trigonometrica.py`
 
 ## Clase `Trigonometrica`
 
@@ -134,7 +135,7 @@ La clase `Trigonometrica` se utiliza para representar y evaluar expresiones trig
 
 Este código define la clase `Expression` como una **clase abstracta** utilizando el módulo `ABC`. Una clase abstracta es una clase que no puede ser instanciada directamente y se utiliza como una plantilla para definir otras clases. En este caso, `Expression` sirve como una base para definir clases concretas relacionadas con expresiones en algún tipo de árbol sintáctico.
 
-# Funciones y Código para el archivo 'abstract.py'
+# Funciones y Código para el archivo `abstract.py`
 
 El **constructor** `__init__` recibe dos parámetros, `fila` y `columna`, que representan la posición de la expresión en algún contexto (por ejemplo, en un archivo de código fuente).
 

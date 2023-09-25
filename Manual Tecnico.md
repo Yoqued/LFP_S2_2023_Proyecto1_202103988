@@ -132,12 +132,6 @@ Estos métodos heredados de la clase base `Expression` se utilizan para obtener 
 
 La clase `Trigonometrica` se utiliza para representar y evaluar expresiones trigonométricas como el seno, el coseno, la tangente y el inverso trigonométrico. Toma una expresión como argumento y devuelve el resultado de la operación trigonométrica aplicada a esa expresión.
 
-Ejemplo de uso:
-
-```python
-expresion_trigonometrica = Trigonometrica(ExpresionNumerica(45), TipoTrigonometrica('seno'), 1, 1)
-resultado, descripcion, estado, representacion_dot, nodo_final = expresion_trigonometrica.operar(arbol_sintactico)
-
 Este código define la clase `Expression` como una **clase abstracta** utilizando el módulo `ABC`. Una clase abstracta es una clase que no puede ser instanciada directamente y se utiliza como una plantilla para definir otras clases. En este caso, `Expression` sirve como una base para definir clases concretas relacionadas con expresiones en algún tipo de árbol sintáctico.
 
 El **constructor** `__init__` recibe dos parámetros, `fila` y `columna`, que representan la posición de la expresión en algún contexto (por ejemplo, en un archivo de código fuente).

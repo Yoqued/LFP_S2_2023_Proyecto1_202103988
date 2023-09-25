@@ -134,6 +134,8 @@ La clase `Trigonometrica` se utiliza para representar y evaluar expresiones trig
 
 Este código define la clase `Expression` como una **clase abstracta** utilizando el módulo `ABC`. Una clase abstracta es una clase que no puede ser instanciada directamente y se utiliza como una plantilla para definir otras clases. En este caso, `Expression` sirve como una base para definir clases concretas relacionadas con expresiones en algún tipo de árbol sintáctico.
 
+# Funciones y Código para el archivo 'abstract.py'
+
 El **constructor** `__init__` recibe dos parámetros, `fila` y `columna`, que representan la posición de la expresión en algún contexto (por ejemplo, en un archivo de código fuente).
 
 Los métodos `operar`, `getFila`, y `getColumna` están marcados como abstractos con el decorador `@abstractmethod`. Esto significa que las clases que hereden de `Expression` deben proporcionar implementaciones concretas para estos métodos en sus definiciones. Estos métodos abstractos definen el comportamiento que se espera de las clases derivadas, pero no proporcionan una implementación real en la clase base `Expression`.
